@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/config-client")
+@RequestMapping("/remote-config-client")
 public class ClientController {
 
     @Value("${server.port}")
