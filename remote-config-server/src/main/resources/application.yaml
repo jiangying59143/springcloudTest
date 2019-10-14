@@ -1,0 +1,18 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: remoteConfigureServer
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/jiangying59143/springcloudTest.git
+          search-paths: config
+          username: jiangying59143
+          password: 510050274!@qaz
+        default-label: master
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
