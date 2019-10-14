@@ -1,4 +1,4 @@
-package controller;
+package com.example.remoteconfigclient.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,6 +17,6 @@ public class ClientController {
 
     @GetMapping("/test")
     public String test(){
-        return port + "-" + info + 4;
+        return port + "-" + info;
     }
 }
