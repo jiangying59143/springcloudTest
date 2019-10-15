@@ -5,9 +5,12 @@ spring:
     name: zipkinclient
   sleuth:
     web:
-      enabled: true
-    sampler: 1.0
-  zipkin: http://localhost:9090/
+      client:
+        enabled: true
+    sampler:
+      probability: 1.0
+  zipkin:
+    base-url: http://localhost:9090/
 eureka:
   client:
     service-url:
